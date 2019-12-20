@@ -27,18 +27,19 @@ public class MainActivity extends AppCompatActivity {
         btnAddWord = findViewById(R.id.btnAddWord);
         btnDisplay = findViewById(R.id.btnDisplay);
 
-        btnDisplay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ShowMeaningActivity.class);
-                startActivity(intent);
-            }
-        });
 
         btnAddWord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AddWordActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnDisplay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ShowMeaningActivity.class);
                 startActivity(intent);
             }
         });
